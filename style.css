@@ -25,38 +25,38 @@ body{
     height: 100vh;
 }
 .navbar{
-    width: 1200px;
-    height: 75px;
-    margin: auto;
-    background-color: rgb(240, 206, 155);
+    width: 100%;
+    height: 10vw;
+    background-color: rgb(188, 151, 96);
+    display: right;
+    justify-content: space-evenly;
 }
 .icon{
-    width: 100px;
+    width: 10vw;
     float: left;
-    height: 75px;
-
+    height: 10vh;
 }
 img {
-    border-radius: 50px;
-    width: 75px;
-    height: 75px;
+    border-radius: 50%;
+    width: 7vw;
+    height: 7vw;
 }
 .menu{
-    width: 400px;
-    float: left;
-    height: 75px;
+    width: 100%;
+    height: 10vw;
 }
 ul{
-    float:left;
+    float:right;
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    margin-right: 0;
 }
 ul li{
     list-style: none ;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
+    margin-left: 6vw;
+    margin-top: 2vw;
+    font-size: 1vw;
 }
 ul li a{
     text-decoration: none;
@@ -69,21 +69,20 @@ ul li a:hover{
     color: #ff7200;
 } 
 .search{
-    width: 330px;
-    float:left;
-    margin-left: 270px;
-
+    width: 400px;
+    height: auto;
+    float:right;
 }
 .srch{
     font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
+    width: 15vw;
+    height: 3vw;
     background:transparent;
     border: 1px solid #ff7200;
     margin-top: 13px;
     color: #fff;
     border-right: none;
-    font-size: 16px;
+    font-size: 1vw;
     float: left;
     padding: 10px;
     border-bottom-left-radius: 5px;
@@ -91,13 +90,13 @@ ul li a:hover{
 
 }
 .btn{
-    width: 100px;
-    height: 40px;
+    width: 8vw;
+    height: 3vw;
     background:#ff7200 ;
     border: 2px solid #ff7200;
     margin-top: 13px;
     color: #fff;
-    font-size: 15px;
+    font-size: 1vw;
     border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -109,19 +108,16 @@ ul li a:hover{
 }
 .headline{
     color: #e0770e;
-    position: relative;
-    top: 40px;
-    left: 400px;
-    z-index: -1;
+    text-align: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-size: 1vw;
 }
 .para{
-    padding-left: 70px;
-    padding-right: 70px;
-    position: relative;
-    top: 100px;
+    padding: 3vw;
     font-family: 'Times New Roman';
     font-size: 20px;
-    text-align: center;
+    text-align: justify;
     color: #f7f3fb;
     background-color: #2c2831;
     opacity: 0.5;
@@ -134,7 +130,6 @@ ul li a:hover{
 .courses{
     background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(bg1.jpg);
     background-size: cover;
-   
 }
 .courses img{
     margin-top: 25px;
@@ -144,8 +139,8 @@ ul li a:hover{
     margin-right: 100px;
     margin-bottom: 100px;
     margin-left: 20px;
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
 }
 .courses button:hover{
     background-color: #ff7200;
@@ -156,13 +151,13 @@ ul li a:hover{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    gap: 80px;
+    gap: 150px;
 }
   
 .course-item {
     position: relative; 
-    width: 200px; 
-    height: 200px; 
+    width: 300px; 
+    height: 300px; 
 }
   
 .course-item img {
@@ -188,16 +183,7 @@ ul li a:hover{
     border-radius: 5px; 
 }
   
-.footer{
-    width: cover;
-    height: 300px;
-    background-color: black;
-}
-.footer p{
-    color: #fff;
-    float: left;
-    padding-top: 70px;
-}
+
 .space1{
     height:80px;
     width:100%;
@@ -208,8 +194,59 @@ ul li a:hover{
 }
 .youtube-video{
     display: flex;
+    margin-left: 6vw;
     flex-wrap: wrap;
     align-content: space-evenly;
-    gap: 80px;
+    gap: 8vw;
     opacity: 80%;
+}
+.footer {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #111; 
+    color: white;
+    padding: 50px 80px;
+    font-family: Arial, sans-serif;
+    width: 100%; 
+    height: 35vh; 
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px; 
+    margin-bottom: 20px;
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer ul {
+    list-style: none;
+    line-height: 50px;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.footer a {
+    color: #f47e00;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+pre{
+    line-height: 40px;
+    font-size: 20px;
 }
